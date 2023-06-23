@@ -1,0 +1,199 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-stat-color: #404bbf;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --modal-overlay-color: #2e2f42;
+  --hero-background-color: #2e2f42;
+  --white-background-color: #ffffff;
+  --modal-background-color: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--white-background-color);
+}
+.logo {
+  color: var(--primary-brand-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+.logo .logo-studio {
+  color: var(--dark-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-stat-color);
+}
+
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+.address .address-link {
+  color: var(--text-color);
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.address .address-link:hover,
+.address .address-link:focus {
+  color: var(--pressed-stat-color);
+}
+
+.title {
+  background-color: var(--hero-background-color);
+}
+.title .title-name {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-background-color);
+}
+.title-button {
+  background-color: var(--primary-brand-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--white-background-color);
+
+  border: none;
+  cursor: pointer;
+}
+.title-button:hover,
+.title-button:focus {
+  background-color: var(--pressed-stat-color);
+}
+.advantages-name {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+.advantages-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.work-title {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark-color);
+}
+.team {
+  background-color: var(--light-color);
+}
+.team-title {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark-color);
+}
+.team-card-list {
+  background-color: var(--white-background-color);
+}
+.team-card-name {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+.team-card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-brand-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-logo-studio {
+  color: var(--light-color);
+}
+.footer-address {
+  color: var(--light-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-buttons {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  border: none;
+  background: var(--light-color);
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--primary-brand-color);
+  cursor: pointer;
+}
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  color: var(--white-background-color);
+  background-color: var(--pressed-stat-color);
+}
+.portfolio-project {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--dark-color);
+}
+.portfolio-project-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
