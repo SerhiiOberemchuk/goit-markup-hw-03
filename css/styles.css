@@ -340,6 +340,7 @@ ul {
   padding-bottom: 72px;
   gap: 24px;
 }
+
 .portfolio .list {
   display: flex;
   flex-wrap: wrap;
@@ -353,6 +354,6 @@ ul {
 }
 
 .portfolio-box {
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
+  border: 1px solid var(--accent-color);
+  background: var(--white-background-color);
 }
