@@ -68,9 +68,13 @@ body {
 .address .address-link:focus {
   color: var(--pressed-stat-color);
 }
-
+.title-name {
+  width: 496px;
+  height: 120px;
+}
 .title {
   background-color: var(--hero-background-color);
+  display: block;
 }
 .title .title-name {
   font-weight: 700;
@@ -88,13 +92,27 @@ body {
   font-weight: 500;
   line-height: 1.5;
   color: var(--white-background-color);
-
+  border-radius: 4px;
   border: none;
   cursor: pointer;
+  padding: 16px 32px;
 }
 .title-button:hover,
 .title-button:focus {
   background-color: var(--pressed-stat-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-name {
   font-weight: 500;
@@ -102,6 +120,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+  padding-bottom: 8px;
 }
 .advantages-text {
   line-height: 1.5;
@@ -127,9 +146,15 @@ body {
   font-size: 36px;
   line-height: 1.11;
   color: var(--dark-color);
+  padding-top: 120px;
 }
 .team-card-list {
   background-color: var(--white-background-color);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-card-name {
   font-weight: 500;
@@ -137,11 +162,16 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: var(--dark-color);
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .team-card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
 .footer {
@@ -164,18 +194,19 @@ body {
   color: var(--light-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
 .portfolio-buttons {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 0.04em;
-
-  border: none;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
   background: var(--light-color);
   font-weight: 500;
   line-height: 1.5;
-
+  padding: 12px 24px;
   color: var(--primary-brand-color);
   cursor: pointer;
 }
@@ -190,10 +221,125 @@ body {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: var(--dark-color);
+
+  padding: 32px 16px 8px;
 }
 .portfolio-project-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding: 0 16px 32px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--accent-color);
+}
+.navigation {
+  display: flex;
+  gap: 76px;
+}
+.navigation .list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navigation .logo {
+  display: flex;
+  align-items: center;
+}
+.address .list {
+  display: flex;
+  gap: 40px;
+}
+.container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  gap: 48px;
+}
+.advantages-list {
+  padding: 120px 0;
+
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.advantages-list .item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+.work .list {
+  display: flex;
+  padding: 72px 0 120px;
+  gap: 24px;
+  justify-content: center;
+}
+.work .list .item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+.team .list {
+  display: flex;
+  padding: 72px 0 120px;
+  gap: 24px;
+  justify-content: center;
+}
+.list .team-card-list {
+  width: calc((100% - 3 * 24px) / 4);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 16px;
+}
+.portfolio .list-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+}
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+.portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+.portfolio-box {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
 }
