@@ -12,7 +12,9 @@
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
 }
-
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -30,6 +32,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.03em;
+  margin-right: 76px;
 }
 
 .link {
@@ -69,8 +72,7 @@ body {
   color: var(--pressed-stat-color);
 }
 .title-name {
-  width: 496px;
-  height: 120px;
+  max-width: 496px;
 }
 .title {
   background-color: var(--hero-background-color);
@@ -95,7 +97,10 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  height: 56px;
   padding: 16px 32px;
+  display: block;
+  max-width: 169px;
 }
 .title-button:hover,
 .title-button:focus {
@@ -120,7 +125,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-text {
   line-height: 1.5;
@@ -134,6 +139,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 .team {
   background-color: var(--light-color);
@@ -147,11 +153,11 @@ body {
   line-height: 1.11;
   color: var(--dark-color);
   padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-card-list {
   background-color: var(--white-background-color);
   border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -163,15 +169,16 @@ body {
   line-height: 1.2;
   color: var(--dark-color);
   text-align: center;
-  padding-top: 32px;
   padding-bottom: 8px;
+}
+.team-name {
+  padding: 32px 16px;
 }
 .team-card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 32px;
 }
 
 .footer {
@@ -186,6 +193,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-studio {
   color: var(--light-color);
@@ -194,7 +203,7 @@ body {
   color: var(--light-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
 }
 
 .portfolio-buttons {
@@ -252,33 +261,39 @@ ul {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-main {
+  border-bottom: 1px solid var(--accent-color);
 }
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--accent-color);
 }
 .navigation {
   display: flex;
-  gap: 76px;
+
+  align-items: center;
 }
 .navigation .list {
   display: flex;
   gap: 40px;
-  align-items: center;
+  padding: 24px 0;
 }
 .navigation .logo {
   display: flex;
   align-items: center;
 }
+
 .address .list {
   display: flex;
+  align-items: center;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.container .title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,7 +313,7 @@ ul {
 }
 .work .list {
   display: flex;
-  padding: 72px 0 120px;
+  padding: 0 0 120px;
   gap: 24px;
   justify-content: center;
 }
@@ -307,19 +322,16 @@ ul {
 }
 .team .list {
   display: flex;
-  padding: 72px 0 120px;
+  padding: 0 0 120px;
   gap: 24px;
   justify-content: center;
 }
 .list .team-card-list {
   width: calc((100% - 3 * 24px) / 4);
 }
-.footer {
-  display: flex;
-  flex-direction: column;
+.footer .container {
   padding-top: 100px;
   padding-bottom: 100px;
-  gap: 16px;
 }
 .portfolio .list-buttons {
   display: flex;
